@@ -4,40 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#37AEE4">
+    android:background="#37AEE4"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/count_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
 
 
     <Button
         android:id="@+id/toastbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="86dp"
+        android:layout_height="62dp"
         android:layout_marginLeft="55dp"
-        android:layout_marginRight="100dp"
         android:layout_marginTop="500dp"
-        android:text="Toast"
+        android:background="@drawable/image_button"
+        android:text="alertdialog"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-    android:id="@+id/countbutton"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="155dp"
-    android:layout_marginRight="100dp"
-    android:layout_marginTop="500dp"
-    android:text="count"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/countbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/custom_button"
+        android:text="count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/randombutton"
+        android:id="@+id/servicebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="255dp"
-        android:layout_marginRight="100dp"
         android:layout_marginTop="500dp"
-        android:text="random"
+        android:layout_marginRight="100dp"
+        android:text="service 등록"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
